@@ -8,6 +8,8 @@ fun main() = application {
         onCloseRequest = ::exitApplication,
         title = "MyKmp",
     ) {
-        App()
+        App(
+            batteryManager = BatteryManager()
+        )
     }
 }
